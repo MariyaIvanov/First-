@@ -1,0 +1,15 @@
+double lostGames = double.Parse(Console.ReadLine());
+double headsetPrice  = double.Parse(Console.ReadLine());    
+double mousePrice  = double.Parse(Console.ReadLine());  
+double keyboardPrice  = double.Parse(Console.ReadLine());   
+double displayPrice = double.Parse(Console.ReadLine());
+
+double headset = Math.Floor(lostGames / 2) * headsetPrice;
+double mouse = Math.Floor(lostGames / 3) * mousePrice;
+double keyboard = Math.Floor(lostGames /6) * keyboardPrice;
+double display = Math.Floor(lostGames/12)  * displayPrice;  
+
+double expenses = headset + mouse + keyboard + display; 
+
+
+Console.WriteLine($"Rage expenses: {expenses:f2} lv.");
